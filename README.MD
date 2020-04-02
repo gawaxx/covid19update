@@ -1,0 +1,1 @@
+This app was made as a quick way to see what the statistic are around the world.    
