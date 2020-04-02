@@ -44,7 +44,7 @@ export default class Stats extends Component {
             <div>
                 <h1> Here is the latest global data regarding the COVID-19 pandemic: </h1>
                 <h2 style={{ color: 'white' }} > {this.transformNumber(currently_infected)} active cases </h2>
-                <h2 style={{ color: 'white' }}> {this.transformNumber(cases)} cases  </h2>
+                <h2 style={{ color: 'white' }}> {this.transformNumber(cases)} total cases  </h2>
                 <h2 style={{ color: 'red' }}> {this.transformNumber(deaths)} deaths </h2>
                 <h2 style={{ color: 'green' }} > {this.transformNumber(recovered)} recovered </h2>
                 <a href={`${this.state.latest_report.pdf}`} target="_blank" rel="noopener noreferrer" > Click here for the latest situational report by the WHO </a>
