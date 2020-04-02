@@ -7,7 +7,8 @@ export default class Stats extends Component {
         deaths: [],
         cases: [],
         recovered: [],
-        currently_infected: []
+        currently_infected: [],
+        latest_report: []
     }
 
     componentDidMount() {
@@ -15,8 +16,11 @@ export default class Stats extends Component {
             deaths: data.reports[0].deaths, 
             cases: data.reports[0].cases,
             recovered: data.reports[0].recovered, 
-            currently_infected: data.reports[0].active_cases[0].currently_infected_patients 
+            currently_infected: data.reports[0].active_cases[0].currently_infected_patients ,
         } ) )
+        API.GetAPI(APILINK + "SituationReports").then( data => this.setState( {
+            latest_report: data.reports[0]
+        }))
 
         // API.GetAPI(APILINK + "Allreports").then( data => console.log(data.reports[0].cases))
 
@@ -43,6 +47,7 @@ export default class Stats extends Component {
                 <h2 style={{ color: 'white' }}> {this.transformNumber(cases)} total cases  </h2>
                 <h2 style={{ color: 'red' }}> {this.transformNumber(deaths)} total deaths </h2>
                 <h2 style={{ color: 'green' }} > {this.transformNumber(recovered)} total recovered </h2>
+                <a href={`${this.state.latest_report.pdf}`} target="_blank" > Click here for the latest situational report by the WHO </a>
             </div>
         )
     }
