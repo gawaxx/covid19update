@@ -4,11 +4,11 @@ import { API, APILINK } from '../adapters/API.js'
 export default class Stats extends Component {
 
     state = {
-        deaths: [],
-        cases: [],
-        recovered: [],
-        currently_infected: [],
-        latest_report: []
+        deaths: "--",
+        cases: "--",
+        recovered: "--",
+        currently_infected: "--",
+        latest_report: "--" 
     }
 
     componentDidMount() {
