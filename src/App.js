@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Stats from './components/Stats';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -8,6 +9,9 @@ function App() {
       <header className="App-header">
           <Stats />
       </header>
+      <footer className="App-footer" >
+          <Footer />
+      </footer>
     </div>
   );
 }
