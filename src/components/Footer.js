@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import { Container, Grid, Header, List, Segment } from 'semantic-ui-react';
 
 export default class Footer extends Component {
     render() {
         return (
             <div>
-                <h1 style={{ color: 'white' }} > this is the footer </h1>
+                <h4 style={{ color: 'white' }} > this is the footer </h4>
             </div>
         )
     }
