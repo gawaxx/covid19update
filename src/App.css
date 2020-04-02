@@ -22,6 +22,7 @@
 .App-footer {
   background-color: #171a1f;
   height: 15vh;
+  margin-top: -1.7vh;
 }
 
 @keyframes App-logo-spin {
