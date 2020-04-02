@@ -42,11 +42,11 @@ export default class Stats extends Component {
         const { deaths, cases, recovered, currently_infected } = this.state
         return (
             <div>
-                <h1> Here are the latest worldwide statistics regarding COVID-19 </h1>
-                <h2 style={{ color: 'white' }} > {this.transformNumber(currently_infected)} total active cases </h2>
-                <h2 style={{ color: 'white' }}> {this.transformNumber(cases)} total cases  </h2>
-                <h2 style={{ color: 'red' }}> {this.transformNumber(deaths)} total deaths </h2>
-                <h2 style={{ color: 'green' }} > {this.transformNumber(recovered)} total recovered </h2>
+                <h1> Here are the latest global statistics regarding the pandemic of COVID-19 </h1>
+                <h2 style={{ color: 'white' }} > {this.transformNumber(currently_infected)} active cases </h2>
+                <h2 style={{ color: 'white' }}> {this.transformNumber(cases)} cases  </h2>
+                <h2 style={{ color: 'red' }}> {this.transformNumber(deaths)} deaths </h2>
+                <h2 style={{ color: 'green' }} > {this.transformNumber(recovered)} recovered </h2>
                 <a href={`${this.state.latest_report.pdf}`} target="_blank" > Click here for the latest situational report by the WHO </a>
             </div>
         )
