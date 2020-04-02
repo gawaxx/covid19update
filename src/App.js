@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Stats from './components/Stats';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
           <Stats />
       </header>
       <footer className="App-footer" >
-          <h1> this is the footer</h1>
+          <Footer />
       </footer>
     </div>
   );
