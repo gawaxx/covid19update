@@ -10,7 +10,8 @@ export default class Footer extends Component {
                 <a style={{ color: 'white' }} target="_blank" rel="noopener noreferrer" href="http://www.linkedin.com/in/jules-blanc-29a36b179" > LinkedIn </a>
 
                 <p style={{ color: 'white' }}>
-                    COVID19Update | made with <span role="img" aria-label="baguette"> 🥖 </span> and ReactJS by Jules Blanc, 2020.
+                    COVID19Update | made with <span role="img" aria-label="baguette"> 🥖 </span> and ReactJS by Jules Blanc, 2020. ||
+                    updated every hour.
                 </p>
 
             </div>
